@@ -1,3 +1,86 @@
-h1 {
-  color: aqua;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font Styles */
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared Styles */
+
+/* Navbar Section Styles */
+
+.nav-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.list-home {
+  color: rgb(37, 36, 50);
+  font-weight: 700;
+}
+
+.list-shop,
+.list-about {
+  color: rgb(137, 135, 161);
+  font-weight: 400;
+}
+
+.list-cart {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 680px) {
+  .list-home {
+    color: rgb(37, 36, 50);
+    font-weight: 700;
+    display: none;
+  }
+
+  .list-shop,
+  .list-about {
+    color: rgb(137, 135, 161);
+    font-weight: 400;
+    display: none;
+  }
+
+  .list-cart {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+  }
 }
