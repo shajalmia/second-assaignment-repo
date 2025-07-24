@@ -32,9 +32,6 @@
   align-items: center;
 }
 
-.nav-logo {
-}
-
 nav ul {
   display: flex;
   gap: 48px;
@@ -64,7 +61,110 @@ nav ul li a {
   font-weight: 400;
 }
 
-@media screen and (max-width: 680px) {
+/* Banner Section Styles */
+.banner-section {
+  max-width: 1140px;
+  display: flex;
+
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.banner-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-content: center;
+}
+.banner-title {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #e95a08;
+}
+#banner-always {
+  color: #000000;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.plant-section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.plant-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 126px 49px;
+}
+
+.plant-title {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #000000;
+}
+.our-title {
+  color: #e95a08;
+}
+.plant-description {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.card {
+  max-width: 270px;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: none;
+}
+
+.card-title {
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #111111;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.card-btn {
+  height: 50px;
+  width: 100%;
+  background-color: #e95a08;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  /* border-radius:8px */
+}
+
+/* Mobile Media */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .nav-section {
+    margin: 16px 20px 28px;
+  }
   .list-home {
     color: rgb(37, 36, 50);
     font-weight: 700;
@@ -82,5 +182,33 @@ nav ul li a {
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 30px;
+  }
+
+  .banner-section {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .banner-left {
+    order: 0;
+    margin: 28px 25px 65px;
+  }
+
+  .banner-right {
+    order: -1;
+  }
+}
+
+/* Medium or Tablet Media */
+
+@media screen and (min-width: 779px) and (max-width: 1024px) {
+  .nav-section {
+    margin: 16px 20px 28px;
+  }
+
+  .banner-section {
+    margin: 20px;
   }
 }
