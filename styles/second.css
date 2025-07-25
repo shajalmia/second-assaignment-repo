@@ -404,20 +404,41 @@ nav ul li a {
   .plants-lover-section {
     flex-direction: column;
     gap: 1rem;
+    margin-left: 2rem;
   }
   .plants-lover-title {
     font-weight: bold;
     font-size: 2rem;
   }
 
+  .plants-lover-list {
+    margin-top: 3rem;
+  }
+
   .footer-section {
     flex-direction: column;
     margin-left: 20px;
+  }
+  .footer-description {
+    font-size: 1.25rem;
+    /* max-width: 270px; */
+    color: #6b7280;
+    margin-top: 1rem;
   }
 
   .link-list {
     justify-content: flex-start;
     margin-top: 2rem;
+  }
+  .footer-section {
+    gap: 2rem;
+  }
+
+  .footer-contact1 ul,
+  .footer-contact2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
   /* Join Section Styles */
