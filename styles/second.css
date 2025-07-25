@@ -240,20 +240,32 @@ nav ul li a {
   border: none;
 }
 
-/* .input-email {
-  display: inline;
-  max-width: 644px;
-  height: 50px;
-  
-  padding: 1rem;
-} */
-
 .join-btn {
   width: 186px;
   height: 50px;
   border: none;
   background-color: #e95a08;
   color: #ffffff;
+}
+
+.latest-deal-section {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.latest-deal-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+#latest-color {
+  color: #e95a08;
+}
+.latest-deal-description {
+  max-width: 888px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-section {
@@ -348,6 +360,7 @@ nav ul li a {
   .nav-section {
     margin: 16px 20px 28px;
   }
+
   .list-home {
     color: rgb(37, 36, 50);
     font-weight: 700;
@@ -365,6 +378,7 @@ nav ul li a {
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 30px;
+    display: flex;
   }
 
   .banner-section {
@@ -384,6 +398,12 @@ nav ul li a {
 
   .banner-right {
     order: -1;
+  }
+  .plant-title {
+    width: 100%;
+  }
+  .plant-description {
+    width: 100%;
   }
 
   /* Card Container */
@@ -415,8 +435,12 @@ nav ul li a {
   .plants-lover-section {
     flex-direction: column;
     gap: 1rem;
-    margin-left: 2rem;
+
     margin-top: 1rem;
+  }
+
+  .plants-lover-description {
+    margin-left: 1.5rem;
   }
   .plants-lover-title {
     font-weight: bold;
@@ -425,6 +449,13 @@ nav ul li a {
 
   .plants-lover-list {
     margin-top: 3rem;
+  }
+
+  .latest-deal-description {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   .footer-section {
@@ -467,28 +498,4 @@ nav ul li a {
   }
 
   /* Join Section Styles */
-}
-
-/* Medium or Tablet Media */
-
-@media screen and (min-width: 779px) and (max-width: 1124px) {
-  .nav-section {
-    margin: 16px 20px 28px;
-  }
-
-  .banner-section {
-    margin: 20px;
-  }
-
-  .plants-lover-section {
-    width: 100%;
-    /* flex-direction: column; */
-    gap: 2%;
-  }
-  .plants-lover-left {
-    width: 49%;
-  }
-  .plants-lover-right {
-    width: 49%;
-  }
 }
