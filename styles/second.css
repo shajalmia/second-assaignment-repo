@@ -280,6 +280,7 @@ nav ul li a {
   align-items: center;
   gap: 1rem;
 }
+
 .latest-deal-section {
   max-width: 1440px;
   margin: 0 auto;
@@ -332,7 +333,7 @@ nav ul li a {
 }
 
 /* Mobile Media */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-section {
     margin: 16px 20px 28px;
   }
@@ -396,6 +397,10 @@ nav ul li a {
   #card2 {
     display: none;
   }
+
+  .banner-lover-plant {
+    display: none;
+  }
   .plants-lover-section {
     flex-direction: column;
     gap: 1rem;
@@ -403,6 +408,16 @@ nav ul li a {
   .plants-lover-title {
     font-weight: bold;
     font-size: 2rem;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .link-list {
+    justify-content: flex-start;
+    margin-top: 2rem;
   }
 
   /* Join Section Styles */
